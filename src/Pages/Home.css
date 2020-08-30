@@ -1,0 +1,228 @@
+/* Гитара на фоне */
+
+.guitarBG{ 
+    height: 100%;
+    width: 100%;
+}
+.divGuitarBG{
+    display: flex;
+    transform: scale(-1, 1);
+    position: absolute;
+    width: 150vw;
+    top: -53vw;
+    left: 5vw;
+    z-index: -3;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+}
+
+/* весь контент ниже хедера */
+.contentHome{
+
+    background-image: url(/public/logo512.png);
+
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    /* border: 3px;
+    border-color: black;
+    border-style: solid; */
+    justify-content: top;     
+    text-align: center;
+    height: 260vh;
+    overflow: hidden;
+    width: 100%;
+}
+/* кастомное выделение текста */
+.custom_selection::-moz-selection {
+    background: rgba( 54, 31, 36);
+    color: rgb(255, 255, 255);
+   
+  }
+  
+.custom_selection::-webkit-selection {
+    background: rgba( 54, 31, 36);
+    color: rgb(255, 255, 255);
+  }
+  
+.custom_selection::selection {
+    background: rgba( 54, 31, 36);
+    color: rgb(255, 255, 255);
+  }
+
+/* первая строка контента, заголовок */
+.homeContentR1{
+    display: flex;
+    text-align: center;
+    font-size: 1.9vw;
+    justify-content: center;
+}
+/* вторая строка c собачьим ухом */
+.homeContentR2{
+    margin-top: 3vh;
+    display: flex;
+    width: 50vw;
+    text-align: left;
+    font-size: 1vw;
+    padding: 2vh 2vw 2vh 3vw;
+    background: rgba(247, 175, 68, 0.521);
+    background:linear-gradient(-45deg, transparent 2em, rgba(247, 175, 68, 0.521) 0);
+    line-height: 4vh;
+    text-decoration: underline;
+    border-radius: 0.5vw;
+
+}
+
+/* третья строка, подсказка*/
+.homeContentR3{
+    margin-top: 3vh;
+    display: flex;
+    font-size: 1vw;
+    justify-content: center;
+}
+/* див с копками */
+.homeContentR4{
+    margin-top:  1.5vh;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 50vw;
+} 
+/* конопки для выбора стандартных размеров */
+.defaultButtons {
+    box-shadow:inset 0vw .1vh 0vw 0vw #fff6af;
+    background:linear-gradient(to right, #ffec64 5%, #ffab23 100%);
+    background-color:#ffec64;
+    border-radius: .3vw;
+    border:0.05vw  solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    font-size:1vw;
+    font-weight:bold;
+    padding:1vh 1vw;
+    text-decoration:none;
+    text-shadow:0px .01vw 0px #ffee66;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+}
+.defaultButtons:hover {
+    background:linear-gradient(to right, #ffab23 5%, #ffec64 100%);
+    background-color:#ffab23;
+}
+.defaultButtons:active {
+    position:relative;
+    top:.5vh;
+}    
+/* первая строка ладов, нечетные */
+.homeContentR5{
+    margin-top: 22vh;
+    display: flex;
+    font-size: .8vw;
+    justify-content: left;
+    /* border: .2vh black solid; */
+    width: 58vw;
+    margin-left: 3.5vw;
+    font-weight: bold;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+}
+/* вторая строка ладов, четные */
+.homeContentR6{
+    display: flex;
+    font-size: .8vw;
+    justify-content: left;
+    /* border: .2vh black solid; */
+    width: 58vw;
+    margin-left: 3.5vw;
+    font-weight: bold;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+}
+/* текст под ладами c собачьим ухом */
+.homeContentR7{
+    margin-top: 3vh;
+    display: flex;
+    font-size: 1vw;
+    justify-content: center;
+    background: rgba(247, 175, 68, 0.521);
+    background:linear-gradient(-45deg, transparent .5em, rgba(247, 175, 68, 0.521) 0);
+    padding: 2vh 2vw 2vh 3vw;
+    text-decoration: underline;
+    width: 50vw;
+    text-align: left;
+    border-radius: 0.5vw;
+}
+/* нечетные расстояние */
+#fret1{margin-left: 1.5em;} #fret3{margin-left: 7.5em;} #fret5{margin-left: 6.5em;} #fret7{margin-left: 6em;} 
+#fret9{margin-left: 4.5em;}#fret11{margin-left: 4.5em;} #fret13{margin-left: 3em;} #fret15{margin-left: 2.5em;} 
+#fret17{margin-left: 2.3em;} #fret19{margin-left: 2em;}
+/* четные расстояния */
+#fret2{margin-left: 6.5em;} #fret4{margin-left: 7.6em;} #fret6{margin-left: 6em;} #fret8{margin-left: 5em;} 
+#fret10{margin-left: 4.7em;}#fret12{margin-left: 3.5em;} #fret14{margin-left: 3.2em;} #fret16{margin-left: 2.5em;} 
+#fret18{margin-left: 2em;} #fret20{margin-left: 1em;}
+/* строка с настройкой кастомных размеров */
+.homeContentR9{
+    
+    margin-top: 3vh;
+    display: flex;
+}
+/* текст с отображением текущей длины */
+.currLength{
+    visibility: hidden;
+    margin-right: 1vw;
+    padding-top: 1.2vh;
+}
+/* инпут длины */
+.inputLength{
+    width: 11vw;
+    height: 4vh;
+    border-radius: .3vw;
+    border:0.05vw solid #ffaa22;
+    font-size: 0.6vw;
+}
+/* кнопка подтверждения */
+.inputConfirm {
+    margin-left: 1vw;
+    box-shadow:inset 0vw .1vh 0vw 0vw #fff6af;
+    background:linear-gradient(to right, #ffec64 5%, #ffab23 100%);
+    background-color:#ffec64;
+    border-radius: .3vw;
+    border:0.05vw  solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    font-size:1vw;
+    font-weight:bold;
+    padding:1vh 1vw;
+    text-decoration:none;
+    text-shadow:0vw .01vw 0vw #ffee66;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+}
+.inputConfirm:hover {
+    background:linear-gradient(to right, #ffab23 5%, #ffec64 100%);
+    background-color:#ffab23;
+}
+.inputConfirm:active {
+    position:relative;
+    top:.5vh;
+}
